@@ -1,7 +1,7 @@
 node_modules/
 
-public/bundle.js.map
 public/bundle.js
+public/bundle.js.map
 public/bundle.js.LICENSE.txt
 public/style.css.map
 public/style.css
