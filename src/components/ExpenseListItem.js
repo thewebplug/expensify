@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import getVisibleExpenses from '../selectors/expenses';
 import { Link } from 'react-router-dom';
-
+import moment from 'moment';
+import numeral from 'numeral';
 
 
 export const ExpenseListItem = (props) => {
@@ -14,8 +15,8 @@ export const ExpenseListItem = (props) => {
 
             <div key={expense.id}>
                 <Link to={`edit/${expense.id}`}><h3>{expense.description}</h3></Link>
-                <p>Amount: {expense.amount}</p>
-                <p>Created At: {expense.createdAt}</p>
+                <p>Amount: {numeral(expense.amount / 100).format('$0,0.00')}</p>
+                <p>Created At: {moment(expense.createdAt).format('MMMM Do, YYYY')}</p>
             </div>
     )
 

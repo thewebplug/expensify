@@ -14,11 +14,11 @@ Array [
     </Link>
     <p>
       Amount: 
-      1000
+      $10.00
     </p>
     <p>
       Created At: 
-      864000000
+      January 11th, 1970
     </p>
   </div>,
   <div
@@ -33,11 +33,11 @@ Array [
     </Link>
     <p>
       Amount: 
-      2000
+      $20.00
     </p>
     <p>
       Created At: 
-      345600000
+      January 5th, 1970
     </p>
   </div>,
   <div
@@ -52,11 +52,11 @@ Array [
     </Link>
     <p>
       Amount: 
-      1400
+      $14.00
     </p>
     <p>
       Created At: 
-      -432000000
+      December 27th, 1969
     </p>
   </div>,
 ]

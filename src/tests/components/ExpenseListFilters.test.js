@@ -44,6 +44,6 @@ test('should call setStartDate with correct value', () => {
 })
 
 test('should change calenderFocused to true', () => {
-    wrapper.find('withStyles(DateRangePicker)').prop('onFocusChange')(filters.startDate)
-    expect(wrapper.state('calenderFocused')).toBe(filters.startDate)
+    wrapper.find('withStyles(DateRangePicker)').prop('onFocusChange')('endDate')
+    expect(wrapper.state('calenderFocused')).toBe('endDate')
 })
