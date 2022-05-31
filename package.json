@@ -9,7 +9,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:prod": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "dev-server": "webpack serve --mode development",
@@ -26,10 +25,7 @@
     "@zarconontol/enzyme-adapter-react-18": "^0.7.3",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
-    "enzyme": "^3.11.0",
     "express": "^4.18.1",
-    "jest": "^28.1.0",
-    "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.6.0",
     "moment": "^2.29.3",
     "node-sass": "^7.0.1",
@@ -41,18 +37,21 @@
     "react-modal": "^3.15.1",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
-    "react-test-renderer": "^18.1.0",
     "redux": "^4.2.0",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "uuid": "^8.3.2",
     "validator": "^13.7.0",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "enzyme-to-json": "^3.6.2"
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "jest": "^28.1.0",
+    "react-test-renderer": "^18.1.0",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^5.8.0"
   }
 }
