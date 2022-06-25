@@ -5,23 +5,23 @@ import { expect } from 'expect';
 import expenses from '../fixtures/expenses'
 
 
-let onSubmit, navigate, wrapper
+let startAddExpense, navigate, wrapper
 
 beforeEach(() => {
-    onSubmit = jest.fn();
+    startAddExpense = jest.fn();
     navigate = jest.fn();
 
-    wrapper = shallow(<AddExpensePage onSubmit={onSubmit} navigate={navigate} />)
+    wrapper = shallow(<AddExpensePage startAddExpense={startAddExpense} navigate={navigate} />)
 })
 
 test('should render AddExpensePage correctly', () => {
     expect(wrapper).toMatchSnapshot();
 })
 
-test('should handle onSubmit', () => {
+test('should handle startAddExpense', () => {
 
     wrapper.find('ExpenseForm').prop('onSubmit')(expenses[0]);
 
-    expect(onSubmit).toHaveBeenCalledWith(expenses[0]);
+    expect(startAddExpense).toHaveBeenCalledWith(expenses[0]);
     expect(navigate).toHaveBeenCalledWith('/')
 })

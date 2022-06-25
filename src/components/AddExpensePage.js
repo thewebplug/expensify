@@ -1,12 +1,12 @@
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import { connect } from 'react-redux';
-import { addExpense } from '../actions/expenses';
+import { startAddExpense } from '../actions/expenses';
 import { useNavigate } from 'react-router-dom';
 
 export const AddExpensePage = (props) => {
     const onSubmit=(expense) => {
-        props.onSubmit(expense);
+        props.startAddExpense(expense);
         props.navigate('/');
     }
     return(
@@ -18,7 +18,7 @@ export const AddExpensePage = (props) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-        onSubmit: (expense) => dispatch(addExpense(expense)),
+    startAddExpense: (expense) => dispatch(startAddExpense(expense)),
         navigate: useNavigate()
     })
 
